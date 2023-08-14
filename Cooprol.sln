@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cooprol.API", "Cooprol.API\Cooprol.API.csproj", "{3A6894F8-4038-4721-92F6-84B0B4328B19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cooprol.Business", "Cooprol.Business\Cooprol.Business.csproj", "{14529FBC-8299-4CF5-B6C8-A7D71C794435}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cooprol.Data", "Cooprol.Data\Cooprol.Data.csproj", "{217E7A54-D40A-421C-85AB-B25F27C971B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A6894F8-4038-4721-92F6-84B0B4328B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A6894F8-4038-4721-92F6-84B0B4328B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A6894F8-4038-4721-92F6-84B0B4328B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A6894F8-4038-4721-92F6-84B0B4328B19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14529FBC-8299-4CF5-B6C8-A7D71C794435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14529FBC-8299-4CF5-B6C8-A7D71C794435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14529FBC-8299-4CF5-B6C8-A7D71C794435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14529FBC-8299-4CF5-B6C8-A7D71C794435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{217E7A54-D40A-421C-85AB-B25F27C971B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{217E7A54-D40A-421C-85AB-B25F27C971B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{217E7A54-D40A-421C-85AB-B25F27C971B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{217E7A54-D40A-421C-85AB-B25F27C971B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

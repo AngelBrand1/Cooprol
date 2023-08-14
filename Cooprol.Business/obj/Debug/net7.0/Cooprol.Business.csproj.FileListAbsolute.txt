@@ -1,0 +1,11 @@
+C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\bin\Debug\net7.0\Cooprol.Business.deps.json
+C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\bin\Debug\net7.0\Cooprol.Business.dll
+C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\bin\Debug\net7.0\Cooprol.Business.pdb
+C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\obj\Debug\net7.0\Cooprol.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\obj\Debug\net7.0\Cooprol.Business.AssemblyInfoInputs.cache
+C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\obj\Debug\net7.0\Cooprol.Business.AssemblyInfo.cs
+C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\obj\Debug\net7.0\Cooprol.Business.csproj.CoreCompileInputs.cache
+C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\obj\Debug\net7.0\Cooprol.Business.dll
+C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\obj\Debug\net7.0\refint\Cooprol.Business.dll
+C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\obj\Debug\net7.0\Cooprol.Business.pdb
+C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\obj\Debug\net7.0\ref\Cooprol.Business.dll
