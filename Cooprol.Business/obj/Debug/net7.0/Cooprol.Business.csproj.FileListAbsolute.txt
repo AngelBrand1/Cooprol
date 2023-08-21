@@ -9,3 +9,7 @@ C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\obj\Debug\net7.
 C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\obj\Debug\net7.0\refint\Cooprol.Business.dll
 C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\obj\Debug\net7.0\Cooprol.Business.pdb
 C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\obj\Debug\net7.0\ref\Cooprol.Business.dll
+C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\bin\Debug\net7.0\Cooprol.Data.dll
+C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\bin\Debug\net7.0\Cooprol.Data.pdb
+C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\obj\Debug\net7.0\Cooprol.Business.csproj.AssemblyReference.cache
+C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Business\obj\Debug\net7.0\Cooprol.Business.csproj.CopyComplete

@@ -25,7 +25,14 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Business\\Cooprol.Business.csproj": {
+                "projectPath": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Business\\Cooprol.Business.csproj"
+              },
+              "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Data\\Cooprol.Data.csproj": {
+                "projectPath": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Data\\Cooprol.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -42,9 +49,25 @@
               "target": "Package",
               "version": "[7.0.10, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.7, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -70,6 +93,126 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Business\\Cooprol.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Business\\Cooprol.Business.csproj",
+        "projectName": "Cooprol.Business",
+        "projectPath": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Business\\Cooprol.Business.csproj",
+        "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Data\\Cooprol.Data.csproj": {
+                "projectPath": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Data\\Cooprol.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Data\\Cooprol.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Data\\Cooprol.Data.csproj",
+        "projectName": "Cooprol.Data",
+        "projectPath": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Data\\Cooprol.Data.csproj",
+        "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

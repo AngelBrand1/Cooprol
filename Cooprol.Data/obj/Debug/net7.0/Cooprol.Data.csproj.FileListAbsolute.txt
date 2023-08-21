@@ -9,3 +9,4 @@ C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Data\obj\Debug\net7.0\Co
 C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Data\obj\Debug\net7.0\refint\Cooprol.Data.dll
 C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Data\obj\Debug\net7.0\Cooprol.Data.pdb
 C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Data\obj\Debug\net7.0\ref\Cooprol.Data.dll
+C:\Users\angel\Documents\Bootcamp\Angel\Cooprol\Cooprol.Data\obj\Debug\net7.0\Cooprol.Data.csproj.AssemblyReference.cache
