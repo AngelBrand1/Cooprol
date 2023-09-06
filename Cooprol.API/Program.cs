@@ -1,7 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Cooprol.Data;
 using System;
-
+using Cooprol.Business.IServices;
+using Cooprol.Business.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -14,6 +15,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<CooprolContext>(
     opt => opt.UseInMemoryDatabase("Cooprol")
 );
+
+builder.Services.AddScoped<IProducerService, ProducerService>();
 
 var app = builder.Build();
 

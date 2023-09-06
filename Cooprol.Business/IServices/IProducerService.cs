@@ -1,6 +1,5 @@
-
 namespace Cooprol.Business.IServices;
-
+using Cooprol.Data.Models;
 public interface IProducerService
 {
     Task<IEnumerable<Producer>> GetProducerAsync();
