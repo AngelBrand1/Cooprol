@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.API\\Cooprol.API.csproj": {}
+    "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.API/Cooprol.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.API\\Cooprol.API.csproj": {
+    "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.API/Cooprol.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.API\\Cooprol.API.csproj",
+        "projectUniqueName": "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.API/Cooprol.API.csproj",
         "projectName": "Cooprol.API",
-        "projectPath": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.API\\Cooprol.API.csproj",
-        "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.API\\obj\\",
+        "projectPath": "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.API/Cooprol.API.csproj",
+        "packagesPath": "/home/angel/.nuget/packages/",
+        "outputPath": "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/angel/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -26,11 +26,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Business\\Cooprol.Business.csproj": {
-                "projectPath": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Business\\Cooprol.Business.csproj"
+              "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Business/Cooprol.Business.csproj": {
+                "projectPath": "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Business/Cooprol.Business.csproj"
               },
-              "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Data\\Cooprol.Data.csproj": {
-                "projectPath": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Data\\Cooprol.Data.csproj"
+              "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Data/Cooprol.Data.csproj": {
+                "projectPath": "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Data/Cooprol.Data.csproj"
               }
             }
           }
@@ -97,21 +97,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Business\\Cooprol.Business.csproj": {
+    "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Business/Cooprol.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Business\\Cooprol.Business.csproj",
+        "projectUniqueName": "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Business/Cooprol.Business.csproj",
         "projectName": "Cooprol.Business",
-        "projectPath": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Business\\Cooprol.Business.csproj",
-        "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Business\\obj\\",
+        "projectPath": "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Business/Cooprol.Business.csproj",
+        "packagesPath": "/home/angel/.nuget/packages/",
+        "outputPath": "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Business/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/angel/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -123,8 +123,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Data\\Cooprol.Data.csproj": {
-                "projectPath": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Data\\Cooprol.Data.csproj"
+              "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Data/Cooprol.Data.csproj": {
+                "projectPath": "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Data/Cooprol.Data.csproj"
               }
             }
           }
@@ -154,21 +154,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Data\\Cooprol.Data.csproj": {
+    "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Data/Cooprol.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Data\\Cooprol.Data.csproj",
+        "projectUniqueName": "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Data/Cooprol.Data.csproj",
         "projectName": "Cooprol.Data",
-        "projectPath": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Data\\Cooprol.Data.csproj",
-        "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Documents\\Bootcamp\\Angel\\Cooprol\\Cooprol.Data\\obj\\",
+        "projectPath": "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Data/Cooprol.Data.csproj",
+        "packagesPath": "/home/angel/.nuget/packages/",
+        "outputPath": "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/angel/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -199,6 +199,10 @@
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[7.0.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -217,7 +221,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
         }
       }
     }

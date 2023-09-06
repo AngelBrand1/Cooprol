@@ -8,15 +8,20 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<CooprolContext>(
-    opt => opt.UseInMemoryDatabase("Cooprol")
+   
+    opt => {
+        string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+        opt.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+    }
 );
 
-builder.Services.AddScoped<IProducerService, ProducerService>();
+// builder.Services.AddScoped<IProducerService, ProducerService>();
 
 var app = builder.Build();
 
