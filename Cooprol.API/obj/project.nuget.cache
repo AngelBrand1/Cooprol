@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ed7pQzwgGc0VX2+QX4ccurz5lxEBugPKOb7Ej4bxuHIneP2kd84KzsRgOASlY8i4nwXzZHJ5OC/6SDGpIKTKgQ==",
+  "dgSpecHash": "GRYtiy6l6flwXlMKkanJxS3Kx75yvCh9UxDsjVYA+qm71FvRazdxeEzhjvMrM1d5RB7NWosG14gdvGp9ZClrVQ==",
   "success": true,
   "projectFilePath": "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.API/Cooprol.API.csproj",
   "expectedPackageFiles": [
     "/home/angel/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/home/angel/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
+    "/home/angel/.nuget/packages/csvhelper/30.0.1/csvhelper.30.0.1.nupkg.sha512",
     "/home/angel/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/home/angel/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/angel/.nuget/packages/humanizer.core.af/2.14.1/humanizer.core.af.2.14.1.nupkg.sha512",

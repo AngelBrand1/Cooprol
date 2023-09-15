@@ -1,0 +1,11 @@
+Id,name,numberCc,cellNumber,isActive
+1,John Doe,12345,555-555-5555,true
+2,Jane Smith,67890,555-123-4567,true
+3,Robert Johnson,54321,555-987-6543,true
+4,Emily Davis,98765,555-222-3333,true
+5,Michael Brown,45678,555-444-5555,true
+6,Sarah White,13579,555-666-7777,true
+7,David Lee,24680,555-888-9999,true
+8,Lisa Anderson,87654,555-000-1111,true
+9,James Wilson,54367,555-123-7777,true
+10,Elizabeth Taylor,87654,555-999-1111,true

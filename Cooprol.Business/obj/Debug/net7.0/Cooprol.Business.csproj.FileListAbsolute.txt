@@ -28,3 +28,5 @@ C:/Users/angel/Documents/Bootcamp/Angel/Cooprol/Cooprol.Business/obj/Debug/net7.
 /home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Business/obj/Debug/net7.0/refint/Cooprol.Business.dll
 /home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Business/obj/Debug/net7.0/Cooprol.Business.pdb
 /home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Business/obj/Debug/net7.0/ref/Cooprol.Business.dll
+/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Business/bin/Debug/net7.0/Csvs/Bill.csv
+/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Business/bin/Debug/net7.0/Csvs/Producer.csv

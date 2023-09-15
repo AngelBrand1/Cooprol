@@ -6,4 +6,6 @@ public class Bill: BaseEntity<int>
     public int lProduced {get; set;}
     public int deductions {get; set;}
     public int toPay {get; set;}
+    public int idProducer {get;set;}
+    public Producer producer {get;set;}
 }
