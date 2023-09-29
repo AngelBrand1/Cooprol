@@ -31,6 +31,7 @@ C:/Users/angel/Documents/Bootcamp/Angel/Cooprol/Cooprol.API/obj/Debug/net7.0/ref
 C:/Users/angel/Documents/Bootcamp/Angel/Cooprol/Cooprol.API/obj/Debug/net7.0/Cooprol.API.pdb
 C:/Users/angel/Documents/Bootcamp/Angel/Cooprol/Cooprol.API/obj/Debug/net7.0/Cooprol.API.genruntimeconfig.cache
 C:/Users/angel/Documents/Bootcamp/Angel/Cooprol/Cooprol.API/obj/Debug/net7.0/ref/Cooprol.API.dll
+<<<<<<< HEAD
 C:/Users/angel/Documents/Bootcamp/Angel/Cooprol/Cooprol.API/bin/Debug/net7.0/Azure.Core.dll
 C:/Users/angel/Documents/Bootcamp/Angel/Cooprol/Cooprol.API/bin/Debug/net7.0/Azure.Identity.dll
 C:/Users/angel/Documents/Bootcamp/Angel/Cooprol/Cooprol.API/bin/Debug/net7.0/Humanizer.dll
@@ -265,6 +266,8 @@ C:/Users/angel/Documents/Bootcamp/Angel/Cooprol/Cooprol.API/bin/Debug/net7.0/Coo
 C:/Users/angel/Documents/Bootcamp/Angel/Cooprol/Cooprol.API/bin/Debug/net7.0/Cooprol.Business.pdb
 /home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.API/bin/Debug/net7.0/appsettings.Development.json
 /home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.API/bin/Debug/net7.0/appsettings.json
+=======
+>>>>>>> 5f0968a (Before autentication)
 /home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.API/bin/Debug/net7.0/Cooprol.API
 /home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.API/bin/Debug/net7.0/Cooprol.API.deps.json
 /home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.API/bin/Debug/net7.0/Cooprol.API.runtimeconfig.json

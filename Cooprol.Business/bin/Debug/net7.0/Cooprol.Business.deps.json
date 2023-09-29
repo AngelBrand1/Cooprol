@@ -14,6 +14,7 @@
           "Cooprol.Business.dll": {}
         }
       },
+<<<<<<< HEAD
       "CsvHelper/30.0.1": {
         "runtime": {
           "lib/net6.0/CsvHelper.dll": {
@@ -53,6 +54,8 @@
           }
         }
       },
+=======
+>>>>>>> 5f0968a (Before autentication)
       "Microsoft.EntityFrameworkCore/7.0.10": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "7.0.10",
@@ -88,15 +91,24 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.EntityFrameworkCore.Relational/7.0.10": {
+=======
+      "Microsoft.EntityFrameworkCore.Relational/7.0.2": {
+>>>>>>> 5f0968a (Before autentication)
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0"
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {
+<<<<<<< HEAD
             "assemblyVersion": "7.0.10.0",
             "fileVersion": "7.0.1023.36204"
+=======
+            "assemblyVersion": "7.0.2.0",
+            "fileVersion": "7.0.222.58006"
+>>>>>>> 5f0968a (Before autentication)
           }
         }
       },
@@ -116,7 +128,11 @@
           "Microsoft.Extensions.Caching.Abstractions": "7.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+<<<<<<< HEAD
           "Microsoft.Extensions.Options": "7.0.1",
+=======
+          "Microsoft.Extensions.Options": "7.0.0",
+>>>>>>> 5f0968a (Before autentication)
           "Microsoft.Extensions.Primitives": "7.0.0"
         },
         "runtime": {
@@ -156,6 +172,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.Extensions.Identity.Core/7.0.10": {
         "dependencies": {
           "Microsoft.AspNetCore.Cryptography.KeyDerivation": "7.0.10",
@@ -182,12 +199,18 @@
           }
         }
       },
+=======
+>>>>>>> 5f0968a (Before autentication)
       "Microsoft.Extensions.Logging/7.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+<<<<<<< HEAD
           "Microsoft.Extensions.Options": "7.0.1"
+=======
+          "Microsoft.Extensions.Options": "7.0.0"
+>>>>>>> 5f0968a (Before autentication)
         },
         "runtime": {
           "lib/net7.0/Microsoft.Extensions.Logging.dll": {
@@ -204,7 +227,11 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.Extensions.Options/7.0.1": {
+=======
+      "Microsoft.Extensions.Options/7.0.0": {
+>>>>>>> 5f0968a (Before autentication)
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
           "Microsoft.Extensions.Primitives": "7.0.0"
@@ -212,7 +239,11 @@
         "runtime": {
           "lib/net7.0/Microsoft.Extensions.Options.dll": {
             "assemblyVersion": "7.0.0.0",
+<<<<<<< HEAD
             "fileVersion": "7.0.323.6910"
+=======
+            "fileVersion": "7.0.22.51805"
+>>>>>>> 5f0968a (Before autentication)
           }
         }
       },
@@ -234,7 +265,11 @@
       },
       "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
         "dependencies": {
+<<<<<<< HEAD
           "Microsoft.EntityFrameworkCore.Relational": "7.0.10",
+=======
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
+>>>>>>> 5f0968a (Before autentication)
           "MySqlConnector": "2.2.5"
         },
         "runtime": {
@@ -246,8 +281,11 @@
       },
       "Cooprol.Data/1.0.0": {
         "dependencies": {
+<<<<<<< HEAD
           "CsvHelper": "30.0.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.10",
+=======
+>>>>>>> 5f0968a (Before autentication)
           "Microsoft.EntityFrameworkCore.InMemory": "7.0.10",
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
         },
@@ -263,6 +301,7 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "CsvHelper/30.0.1": {
       "type": "package",
       "serviceable": true,
@@ -291,6 +330,8 @@
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/7.0.10",
       "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.7.0.10.nupkg.sha512"
     },
+=======
+>>>>>>> 5f0968a (Before autentication)
     "Microsoft.EntityFrameworkCore/7.0.10": {
       "type": "package",
       "serviceable": true,
@@ -319,12 +360,21 @@
       "path": "microsoft.entityframeworkcore.inmemory/7.0.10",
       "hashPath": "microsoft.entityframeworkcore.inmemory.7.0.10.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.EntityFrameworkCore.Relational/7.0.10": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-PO2QB2Du+pW210UHmepYR12bk+ZOZJCiNkA7zEAxWs+vzvrRAMsUPlDlfgX2LXE7NBsnb0uvZp7a1/qqKf3fRQ==",
       "path": "microsoft.entityframeworkcore.relational/7.0.10",
       "hashPath": "microsoft.entityframeworkcore.relational.7.0.10.nupkg.sha512"
+=======
+    "Microsoft.EntityFrameworkCore.Relational/7.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TbTGOdaGtjps3GP7rLWXEXzmP+EXhV8AwPE/ov0QYhs5i5vKZX5ZpVLMnco2MeMtiPgLyxE7DhQT8s1wlu190g==",
+      "path": "microsoft.entityframeworkcore.relational/7.0.2",
+      "hashPath": "microsoft.entityframeworkcore.relational.7.0.2.nupkg.sha512"
+>>>>>>> 5f0968a (Before autentication)
     },
     "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
       "type": "package",
@@ -361,6 +411,7 @@
       "path": "microsoft.extensions.dependencyinjection.abstractions/7.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.Extensions.Identity.Core/7.0.10": {
       "type": "package",
       "serviceable": true,
@@ -375,6 +426,8 @@
       "path": "microsoft.extensions.identity.stores/7.0.10",
       "hashPath": "microsoft.extensions.identity.stores.7.0.10.nupkg.sha512"
     },
+=======
+>>>>>>> 5f0968a (Before autentication)
     "Microsoft.Extensions.Logging/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -389,12 +442,21 @@
       "path": "microsoft.extensions.logging.abstractions/7.0.0",
       "hashPath": "microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.Extensions.Options/7.0.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-pZRDYdN1FpepOIfHU62QoBQ6zdAoTvnjxFfqAzEd9Jhb2dfhA5i6jeTdgGgcgTWFRC7oT0+3XrbQu4LjvgX1Nw==",
       "path": "microsoft.extensions.options/7.0.1",
       "hashPath": "microsoft.extensions.options.7.0.1.nupkg.sha512"
+=======
+    "Microsoft.Extensions.Options/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lP1yBnTTU42cKpMozuafbvNtQ7QcBjr/CcK3bYOGEMH55Fjt+iecXjT6chR7vbgCMqy3PG3aNQSZgo/EuY/9qQ==",
+      "path": "microsoft.extensions.options/7.0.0",
+      "hashPath": "microsoft.extensions.options.7.0.0.nupkg.sha512"
+>>>>>>> 5f0968a (Before autentication)
     },
     "Microsoft.Extensions.Primitives/7.0.0": {
       "type": "package",

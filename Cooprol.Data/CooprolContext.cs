@@ -1,27 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Reflection;
+using Cooprol.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Cooprol.Data.Models;
 namespace Cooprol.Data;
 
-public class CooprolContext: DbContext
+public class CooprolContext : DbContext
 {
-    public CooprolContext(
-        DbContextOptions<CooprolContext> options): base(options)
-    {
 
-    }
-    public DbSet<Producer> Producers {get; set;}
-    public DbSet<Bill> Bills {get; set;}
-
-    protected override void OnModelCreating(ModelBuilder builder)
+    public CooprolContext(DbContextOptions<CooprolContext> options)
+        : base(options)
     {
-        if(builder == null)
-        {
-            return;
-        }
-        builder.Entity<Producer>().ToTable("Producer").HasKey(k => k.Id);
-        builder.Entity<Bill>().ToTable("Bill").HasKey(k => k.Id);
-        base.OnModelCreating(builder);
     }
+
+    public  DbSet<Bill> Bills { get; set; }
+
+    public  DbSet<Producer> Producers { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder
+            .UseCollation("utf8mb4_0900_ai_ci")
+            .HasCharSet("utf8mb4");
+        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        base.OnModelCreating(modelBuilder);
+    }
+
 }

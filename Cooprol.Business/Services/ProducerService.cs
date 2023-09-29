@@ -1,35 +1,109 @@
-using System;
+using System.Net;
 using Cooprol.Business.IServices;
+using Cooprol.Data;
+using Cooprol.Data.Dto;
 using Cooprol.Data.Models;
 namespace Cooprol.Business.Services;
 
-public class ProducerService: IProducerService
-{
-    public async Task<IEnumerable<Producer>> GetProducerAsync()
-    {
-        List<Producer> producers = new List<Producer>();
-        producers.Add(
-          new Producer(){
-               Id = 1,
-               name = "Juan",
-               numberCc = "12356",
-               cellNumber = "31822233",
-               isActive = true
-          }
+public class ProducerService : IProducerService
 
-        );
-        return producers;
-    }
-    public Task<Producer> GetById(int id)
+{
+    private readonly IUnitOfWork _unitOfWork;
+    
+    public ProducerService(IUnitOfWork unitOfWork)
     {
-         throw new NotImplementedException();
+        _unitOfWork = unitOfWork;
     }
-    public Task<Producer> CreateProducer(Producer producer)
+    public async Task<BaseMessage<Producer>> CreateProducer(Producer producer)
     {
-         throw new NotImplementedException();
+        try
+        {
+            await _unitOfWork.ProducerRepository.AddAsync(producer);
+            await _unitOfWork.SaveAsync();
+        }
+        catch (System.Exception)
+        {
+            
+            return Utils.BuildMessage<Producer>(HttpStatusCode.BadRequest,BaseMessageStatus.BAD_REQUEST_400);
+        }
+        return  Utils.BuildMessage<Producer>(HttpStatusCode.Created,BaseMessageStatus.OK_200, new List<Producer>{producer});
     }
-    public Task<Producer> UpdateProducer(Producer producer)
+    
+    public async Task<BaseMessage<Producer>> GetAll()
     {
-         throw new NotImplementedException();
+       
+        IEnumerable<Producer> producers;
+        try
+        {
+            producers = await _unitOfWork.ProducerRepository.GetAllAsync();
+            if(producers!=null && producers.Any())
+            {
+               return Utils.BuildMessage<Producer>(HttpStatusCode.OK,BaseMessageStatus.OK_200, new List<Producer>(producers));
+            }
+            else
+            {
+
+                return Utils.BuildMessage<Producer>(HttpStatusCode.NoContent,BaseMessageStatus.OK_204);
+            }
+        }
+        catch (Exception ex)
+        {
+            
+            return Utils.BuildMessage<Producer>(HttpStatusCode.BadRequest,ex.Message);
+            
+        }
+    }
+    
+    public async Task<BaseMessage<Producer>> GetActive()
+    {
+        IEnumerable<Producer> producers;
+        try
+        {
+            producers = await _unitOfWork.ProducerRepository.GetAllAsync(x => x.IsActive==true);
+            if(producers!=null && producers.Any())
+            {
+               return Utils.BuildMessage<Producer>(HttpStatusCode.OK,BaseMessageStatus.OK_200, new List<Producer>(producers));
+            }
+            else
+            {
+
+                return Utils.BuildMessage<Producer>(HttpStatusCode.NoContent,BaseMessageStatus.OK_204);
+            }
+        }
+        catch (Exception ex)
+        {
+            
+            return Utils.BuildMessage<Producer>(HttpStatusCode.BadRequest,ex.Message);
+            
+        }
+    }
+
+    public async Task<BaseMessage<Producer>> UpdateProducer(Producer producer)
+    {
+        try
+        {
+            await _unitOfWork.ProducerRepository.Update(producer);
+            await _unitOfWork.SaveAsync();
+        }
+        catch (Exception ex)
+        {
+            return Utils.BuildMessage<Producer>(HttpStatusCode.BadRequest,ex.Message);
+        }
+        
+        return Utils.BuildMessage<Producer>(HttpStatusCode.OK,BaseMessageStatus.OK_200);
+    }
+        public async Task<BaseMessage<Producer>> DeleteProducer(int id)
+    {
+        try
+        {
+            await _unitOfWork.ProducerRepository.Delete(id);
+            await _unitOfWork.SaveAsync();
+        }
+        catch (Exception ex)
+        {
+            return Utils.BuildMessage<Producer>(HttpStatusCode.BadRequest,ex.Message);
+        }
+        
+        return Utils.BuildMessage<Producer>(HttpStatusCode.OK,BaseMessageStatus.OK_200);
     }
 }
