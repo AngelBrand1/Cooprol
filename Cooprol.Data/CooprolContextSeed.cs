@@ -36,10 +36,10 @@ public class CooprolContextSeed
                         {
                             bills.Add(new Bill{
                                 Id = item.Id,
-                                lProduced = item.lProduced,
-                                deductions = item.deductions,
-                                toPay = item.toPay,
-                                idProducer = item.idProducer
+                                LProduced = item.LProduced,
+                                Deductions = item.Deductions,
+                                ToPay = item.ToPay,
+                                IdProducer = item.IdProducer
                             });
                         }
                         context.Bills.AddRange(bills);

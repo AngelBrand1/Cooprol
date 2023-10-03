@@ -9,9 +9,14 @@ using Cooprol.Data.Repository;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// builder.Services.ConfigureCors();
-// builder.Services.AddAplicationsServices();
+builder.Services.ConfigureCors();
+builder.Services.AddAplicationsServices();
 builder.Services.AddControllers();
+builder.Services.AddDbContext<CooprolContext>(options =>
+{
+    var serverVersion = ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), serverVersion);
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -24,7 +29,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
