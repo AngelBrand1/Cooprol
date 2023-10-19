@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QBDffCuJWcuwARloltkzfFirtXGaV7/NjQdHF6FinzXGs9DlWJfUO1RsIULpdD3RcKOItmtS4iXc7I0tGAYa6g==",
+  "dgSpecHash": "F+/Bx9y19DSX0gao3umdL03RMWwyiRpTVN3BnS4E5btkwiS3/IEnCqwYqCIqIWZxXvoq46DU8LT6mIPROrXyDA==",
   "success": true,
   "projectFilePath": "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.API/Cooprol.API.csproj",
   "expectedPackageFiles": [
@@ -223,12 +223,5 @@
     "/home/angel/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
     "/home/angel/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.API/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
