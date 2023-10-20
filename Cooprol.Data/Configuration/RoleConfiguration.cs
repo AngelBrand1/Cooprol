@@ -10,10 +10,7 @@ public class RoleConfiguration : IEntityTypeConfiguration<Role>
 
         builder.ToTable("Role");
 
-     
-
-        // builder.HasOne(d => d.IdProducerNavigation).WithMany(p => p.Bills)
-        //     .HasForeignKey(d => d.IdProducer)
-        //         .HasConstraintName("Bill_ibfk_1");
+        builder.Property(e => e.Desciption)
+        .IsRequired();
     }
 }

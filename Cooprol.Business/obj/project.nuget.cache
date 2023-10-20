@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JvENibVfY6lNEiLytVHg9Ees5+4mqCMX1ivwn54cQ+nbuIusluXO977BF/ixP5/+dTjOjxPYsOoVEY1e7tBSpQ==",
+  "dgSpecHash": "Uq5sIRPcW8TmUerJe1SYqf1BRSTGhaUX0MDBfFRGAry5texmSAvQ1dvNkCr0H64ZSVurU5adD9GgKR0/FdqF9g==",
   "success": true,
   "projectFilePath": "/home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Business/Cooprol.Business.csproj",
   "expectedPackageFiles": [
@@ -27,12 +27,5 @@
     "/home/angel/.nuget/packages/mysqlconnector/2.2.5/mysqlconnector.2.2.5.nupkg.sha512",
     "/home/angel/.nuget/packages/pomelo.entityframeworkcore.mysql/7.0.0/pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /home/angel/Documents/2023/Bootcamp/Angel/Cooprol/Cooprol.Business/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
