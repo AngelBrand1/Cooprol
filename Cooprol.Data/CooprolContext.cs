@@ -17,6 +17,8 @@ public class CooprolContext : DbContext
     public  DbSet<Bill> Bills { get; set; }
 
     public  DbSet<Producer> Producers { get; set; }
+    // public  DbSet<User> Users { get; set; }
+    // public  DbSet<Role> Roles { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

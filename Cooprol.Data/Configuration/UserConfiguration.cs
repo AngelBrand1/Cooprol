@@ -17,7 +17,7 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
         builder.Property(e => e.Email)
         .HasColumnName("email");
         builder.Property(e => e.UserName)
-        .HasColumnName("numbercc");
+        .HasColumnName("username");
         builder.Property(e => e.Password)
         .HasColumnName("password");
 
@@ -34,7 +34,7 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
             .HasOne(ur => ur.User)
             .WithMany(u => u.UserRole)
             .HasForeignKey(u => u.IdUser),
-            
+
             j => 
             {
                 j.HasKey(ur => new {ur.IdRole, ur.IdUser});
