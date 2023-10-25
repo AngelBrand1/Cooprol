@@ -16,7 +16,7 @@ namespace Cooprol.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .UseCollation("utf8mb4_0900_ai_ci")
-                .HasAnnotation("ProductVersion", "7.0.11")
+                .HasAnnotation("ProductVersion", "7.0.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             MySqlModelBuilderExtensions.HasCharSet(modelBuilder, "utf8mb4");
@@ -146,9 +146,6 @@ namespace Cooprol.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("IdUser")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Id")
                         .HasColumnType("int");
 
                     b.HasKey("IdRole", "IdUser");

@@ -1,6 +1,6 @@
 namespace Cooprol.Data.Models;
 
-public class UserRole: BaseEntity<int>
+public class UserRole
 {
     public int IdUser {get; set;}
     public User User {get; set;}

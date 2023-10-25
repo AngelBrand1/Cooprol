@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Cooprol.Data.Migrations
 {
     [DbContext(typeof(CooprolContext))]
-    [Migration("20231020175021_UserRole")]
+    [Migration("20231025130517_UserRole")]
     partial class UserRole
     {
         /// <inheritdoc />
@@ -19,7 +19,7 @@ namespace Cooprol.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .UseCollation("utf8mb4_0900_ai_ci")
-                .HasAnnotation("ProductVersion", "7.0.11")
+                .HasAnnotation("ProductVersion", "7.0.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             MySqlModelBuilderExtensions.HasCharSet(modelBuilder, "utf8mb4");

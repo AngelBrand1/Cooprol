@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Cooprol.Data.Migrations
 {
     [DbContext(typeof(CooprolContext))]
-    [Migration("20230918163155_initialize")]
-    partial class initialize
+    [Migration("20231025131519_UserRoleModified")]
+    partial class UserRoleModified
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -19,7 +19,7 @@ namespace Cooprol.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .UseCollation("utf8mb4_0900_ai_ci")
-                .HasAnnotation("ProductVersion", "7.0.11")
+                .HasAnnotation("ProductVersion", "7.0.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             MySqlModelBuilderExtensions.HasCharSet(modelBuilder, "utf8mb4");
@@ -90,6 +90,74 @@ namespace Cooprol.Data.Migrations
                     b.ToTable("Producer", (string)null);
                 });
 
+            modelBuilder.Entity("Cooprol.Data.Models.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Desciption")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id")
+                        .HasName("PRIMARY");
+
+                    b.ToTable("Role", (string)null);
+                });
+
+            modelBuilder.Entity("Cooprol.Data.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("longtext")
+                        .HasColumnName("email");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext")
+                        .HasColumnName("name");
+
+                    b.Property<string>("NumberCc")
+                        .IsRequired()
+                        .HasColumnType("longtext")
+                        .HasColumnName("numbercc");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("longtext")
+                        .HasColumnName("password");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("longtext")
+                        .HasColumnName("username");
+
+                    b.HasKey("Id")
+                        .HasName("PRIMARY");
+
+                    b.ToTable("User", (string)null);
+                });
+
+            modelBuilder.Entity("Cooprol.Data.Models.UserRole", b =>
+                {
+                    b.Property<int>("IdRole")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdUser")
+                        .HasColumnType("int");
+
+                    b.HasKey("IdRole", "IdUser");
+
+                    b.HasIndex("IdUser");
+
+                    b.ToTable("UserRole");
+                });
+
             modelBuilder.Entity("Cooprol.Data.Models.Bill", b =>
                 {
                     b.HasOne("Cooprol.Data.Models.Producer", "IdProducerNavigation")
@@ -102,9 +170,38 @@ namespace Cooprol.Data.Migrations
                     b.Navigation("IdProducerNavigation");
                 });
 
+            modelBuilder.Entity("Cooprol.Data.Models.UserRole", b =>
+                {
+                    b.HasOne("Cooprol.Data.Models.Role", "Role")
+                        .WithMany("UserRole")
+                        .HasForeignKey("IdRole")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Cooprol.Data.Models.User", "User")
+                        .WithMany("UserRole")
+                        .HasForeignKey("IdUser")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Cooprol.Data.Models.Producer", b =>
                 {
                     b.Navigation("Bills");
+                });
+
+            modelBuilder.Entity("Cooprol.Data.Models.Role", b =>
+                {
+                    b.Navigation("UserRole");
+                });
+
+            modelBuilder.Entity("Cooprol.Data.Models.User", b =>
+                {
+                    b.Navigation("UserRole");
                 });
 #pragma warning restore 612, 618
         }
