@@ -4,6 +4,6 @@ public class Role: BaseEntity<int>
 {
     public string Desciption {get; set;}
     public ICollection<User> Users {get; set;} = new HashSet<User>();
-    public ICollection<UserRole> UserRole {get; set;} = new HashSet<UserRole>();
+    public ICollection<UserRole> UserRole {get; set;}
 
 }

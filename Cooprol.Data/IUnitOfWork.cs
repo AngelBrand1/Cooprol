@@ -10,5 +10,7 @@ public interface IUnitOfWork
 {
     IRepository<Producer, int> ProducerRepository {get;}
     IRepository<Bill, int> BillRepository {get;}
+    IRepository<User, int> UserRepository {get;}
+    IRepository<Role, int> RoleRepository {get;}
     Task SaveAsync();
 }

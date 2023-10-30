@@ -12,9 +12,25 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     private readonly CooprolContext _context; 
     private IRepository<Producer, int> _producerRepository;
     private IRepository<Bill, int> _billRepository;
+    private IRepository<User, int> _userRepository;
+    private IRepository<Role, int> _roleRepository;
     public UnitOfWork(CooprolContext context)
     {
         _context = context;
+    }
+    public IRepository<User, int> UserRepository 
+    {
+        get {
+            _userRepository ??= new Repository<User, int>(_context);
+            return _userRepository;
+        }
+    }
+    public IRepository<Role, int> RoleRepository 
+    {
+        get {
+            _roleRepository ??= new Repository<Role, int>(_context);
+            return _roleRepository;
+        }
     }
     public IRepository<Producer, int> ProducerRepository 
     {

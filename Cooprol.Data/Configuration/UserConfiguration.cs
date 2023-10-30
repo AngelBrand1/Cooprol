@@ -23,7 +23,7 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
 
         builder.
         HasMany(e => e.Roles)
-        .WithMany(r => r.Users)
+        .WithMany(e => e.Users)
         .UsingEntity<UserRole>(
             j => j
             .HasOne(ur => ur.Role)
@@ -33,11 +33,11 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
             j => j
             .HasOne(ur => ur.User)
             .WithMany(u => u.UserRole)
-            .HasForeignKey(u => u.IdUser),
+            .HasForeignKey(ur => ur.IdUser),
 
             j => 
             {
-                j.HasKey(ur => new {ur.IdRole, ur.IdUser});
+                j.HasKey(r => new {r.IdRole, r.IdUser});
             }
 
         );

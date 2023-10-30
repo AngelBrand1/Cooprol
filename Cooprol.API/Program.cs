@@ -11,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.ConfigureCors();
 builder.Services.AddAplicationsServices();
+builder.Services.AddJwt(builder.Configuration);
 builder.Services.AddControllers();
 builder.Services.AddDbContext<CooprolContext>(options =>
 {
@@ -47,7 +48,7 @@ using(var scope = app.Services.CreateScope())
 }
 app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
